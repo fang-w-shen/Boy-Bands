@@ -20,8 +20,8 @@ var veggieElement = document.getElementById("vegetables");
 for (var loopTracker = 0; loopTracker < loopCount; loopTracker += 1) {
   
   // Add the band names into the correct <div>
-  currentBand += bands[loopTracker]+" ";
-  bandElement.innerHTML="<p>"+currentBand+"</p>";
+  currentBand += "<li>"+bands[loopTracker]+"</li>";
+  bandElement.innerHTML=currentBand;
 
   
   // Add the veggie names into the correct <div>
